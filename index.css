@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-base text-ink font-sans antialiased;
+}
+
+/* Minimal code-block styling; a real highlight.js theme can replace this */
+.prose-chat pre {
+  @apply bg-black/40 border border-border rounded-lg p-4 overflow-x-auto text-sm font-mono;
+}
+
+.prose-chat code {
+  @apply font-mono text-sm;
+}
+
+.prose-chat p {
+  @apply leading-relaxed;
+}
+
+.prose-chat table {
+  @apply w-full text-sm border-collapse;
+}
+
+.prose-chat th,
+.prose-chat td {
+  @apply border border-border px-3 py-2 text-left;
+}
